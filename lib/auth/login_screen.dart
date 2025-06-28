@@ -1,4 +1,4 @@
-import '../main.dart';
+import 'package:apps_collection/home_page.dart';
 import 'sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

@@ -5,6 +5,7 @@ import 'ecommers/providers/product_provider.dart';
 import 'auth/registration_provider.dart';
 import 'news/providers/news_provider.dart';
 import 'random_users/presentation/providers/random_user_provider.dart';
+import 'package:apps_collection/auth/login_screen.dart';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -35,17 +36,8 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(colorSchemeSeed: Colors.blue, useMaterial3: true),
-      home: const HomePage(),
+      home: LoginScreen(),
       title: "Flutter Apps Collection",
     );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }
