@@ -5,6 +5,7 @@ import 'package:apps_collection/news/screens/news_page.dart';
 import 'package:apps_collection/random_users/presentation/screens/random_user_screen.dart';
 import 'package:apps_collection/tic_tac_toe/game_page.dart';
 import 'package:apps_collection/to_do/screens/my_home_page.dart';
+import 'package:apps_collection/weather/screens/home_page.dart' as weather_home;
 import 'package:flutter/material.dart';
 
 class AppEntry {
@@ -44,7 +45,11 @@ class HomePage extends StatelessWidget {
     ),
     AppEntry(name: 'Tic Tac Toe', icon: Icons.grid_3x3, screen: GamePage()),
     AppEntry(name: 'To-Do', icon: Icons.check_box, screen: MyHomePage()),
-    AppEntry(name: 'Weather', icon: Icons.cloud, screen: HomePage()),
+    AppEntry(
+      name: 'Weather',
+      icon: Icons.cloud,
+      screen: weather_home.HomePage(),
+    ),
     AppEntry(name: 'Auth', icon: Icons.login, screen: LoginScreen()),
   ];
 
