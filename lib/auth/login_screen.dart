@@ -10,7 +10,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var prov = Provider.of<registrationProvider>(context);
+    var prov = Provider.of<RegistrationProvider>(context);
     var formKey = GlobalKey<FormState>();
     return Scaffold(
       appBar: AppBar(title: const Text("Login")),

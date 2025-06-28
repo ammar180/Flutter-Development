@@ -9,7 +9,7 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var prov = Provider.of<registrationProvider>(context, listen: false);
+    var prov = Provider.of<RegistrationProvider>(context, listen: false);
     ;
 
     var formKey = GlobalKey<FormState>();

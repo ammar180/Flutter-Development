@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import './registration_result_model.dart';
 import './registration_service.dart';
 
-class registrationProvider extends ChangeNotifier {
+class RegistrationProvider extends ChangeNotifier {
   TextEditingController nameCtrl = TextEditingController();
   TextEditingController phoneCtrl = TextEditingController();
 
@@ -14,9 +14,8 @@ class registrationProvider extends ChangeNotifier {
   RegistrationResultModel? loginResult;
   RegistrationResultModel? signupResult;
 
-  String? fieldValidation(String? txt) => txt == null || txt.isEmpty
-      ? "This field is required"
-      : null;
+  String? fieldValidation(String? txt) =>
+      txt == null || txt.isEmpty ? "This field is required" : null;
 
   Future login() async {
     loginResult = await RegistrationService().login(
