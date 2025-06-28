@@ -16,6 +16,12 @@ This repository showcases my Flutter development practice through a collection o
 | To-Do        | Manage your daily tasks and to-do lists     |
 | Weather      | Check current weather and forecasts         |
 
+## Live Demo in Web version:
+
+visit application and try your self:
+
+[live demo](https://ammar180.github.io/Flutter-Development/)
+
 ## Android APK Release
 
 Download the latest Android APK:
