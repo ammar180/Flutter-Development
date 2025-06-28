@@ -1,3 +1,4 @@
+import '/weather/providers/weather_provider.dart';
 import 'tic_tac_toe/game_provider.dart';
 import 'to_do/providers/to_do_provider.dart';
 import 'ecommers/providers/product_provider.dart';
@@ -18,6 +19,7 @@ void main() {
         ChangeNotifierProvider(create: (context) => RandomUserProvider()),
         ChangeNotifierProvider(create: (context) => GameProvider()),
         ChangeNotifierProvider(create: (context) => ToDoProvider()),
+        ChangeNotifierProvider(create: (context) => WeatherProvider()),
       ],
       child: const MainApp(),
     ),
